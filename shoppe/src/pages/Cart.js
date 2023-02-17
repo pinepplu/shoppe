@@ -1,8 +1,14 @@
 import React from 'react'
+import Navbar from '../components/navbar/Navbar'
+import Footer from '../components/footer/Footer'
 
-const Cart = () => {
+function Cart() {
   return (
+    <>
+    <Navbar />
     <div>Shooping Cart</div>
+    <Footer />
+    </>
   )
 }
 
