@@ -1,19 +1,22 @@
 .navbar-container {
-    color: darksalmon;
+    color: lavenderblush;
     background-color: darkslateblue;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 1rem;
-    height: 3rem;
+    height: 5rem;
+    font-weight: 500px;
+    font-size: 1.3rem;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
     list-style: none;
-    display: flex;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+    width: 25vw;
 }
 
 a {
@@ -23,8 +26,27 @@ a {
 
 li:hover {
     background-color: darkblue;
+    height: 5rem;
+    display: flex;
+    align-items: center;
 }
 
-.search-bar:hover {
-    background-color: darkblue;
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 30rem;
+}
+
+.search {
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.nav-logo {
+    color: darksalmon;
+    /* font-style: italic; */
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: 600;
 }
