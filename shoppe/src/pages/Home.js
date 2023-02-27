@@ -1,13 +1,15 @@
 import React from 'react'
-import Navbar from '../components/navbar/Navbar'
-import Footer from '../components/footer/Footer'
+import {PRODUCTS} from '../components/products/Products'
+import Product from '../components/products/ProductDisplay'
 
 function Home() {
   return (
     <>
-    <Navbar />
-    <div>Home</div>
-    <Footer />
+    <section className='products'>
+      {PRODUCTS.map((product) => (
+        <Product data={product}/>
+      ))}
+    </section>
     </>
   )
 }

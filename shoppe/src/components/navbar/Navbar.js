@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import { ShoppingCart } from 'phosphor-react'
 
 function Navbar() {
   return (
@@ -13,7 +14,7 @@ function Navbar() {
         <li><Link to='/womens'>Womens</Link></li>
         <li><Link to='/mens'>Mens</Link></li>
         <li><Link to='/login'>login</Link></li>
-        <li><Link to='/cart'>Cart</Link></li>
+        <li><Link to='/cart'><ShoppingCart/></Link></li>
       </ul>
     </div>
   );
