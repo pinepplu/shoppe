@@ -1,0 +1,30 @@
+.home-title {
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: 15px;
+}
+
+.container {
+    display: flex;
+    padding: 2rem 2rem;
+}
+
+.card {
+    border-radius: 20px;
+    margin-right: 10px;
+    height: 200px;
+    background-color: aquamarine;
+    flex: 1;
+    transition: .3s all ease;
+
+}
+
+.card:hover {
+    flex: 2;
+    background-color: blueviolet;
+}

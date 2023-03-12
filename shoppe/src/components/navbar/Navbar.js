@@ -10,7 +10,8 @@ function Navbar() {
       <div className='search-bar'>
         <input type="text" className='search' placeholder="Search..." />
       </div>
-      <ul>
+      <ul className='nav-links'>
+        <li><Link to='/usestate'>useState</Link></li>
         <li><Link to='/womens'>Womens</Link></li>
         <li><Link to='/mens'>Mens</Link></li>
         <li><Link to='/login'>login</Link></li>

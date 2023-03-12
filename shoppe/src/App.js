@@ -7,6 +7,7 @@ import Cart from './pages/Cart'
 import Womens from './pages/Womens'
 import Mens from './pages/Mens'
 import Login from './pages/Login';
+import UseState from './pages/UseState';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/womens' element={<Womens />} />
           <Route path='/mens' element={<Mens />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/usestate' element={<UseState />} />
         </Routes>
         <Footer />
       </Router>
