@@ -9,6 +9,28 @@
     gap: 15px;
 }
 
+.product-items:hover {
+    cursor: pointer;
+}
+
+.product-items:hover .add-cart-btn {
+	opacity: 1;
+}
+
+.add-cart-btn {
+    border: none;
+	outline: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+	cursor: pointer;
+	width: 100%;
+    background: transparent;
+}
+
+.add-cart-btn:hover {
+    background-color:cadetblue;
+}
+
 .container {
     display: flex;
     padding: 2rem 2rem;
