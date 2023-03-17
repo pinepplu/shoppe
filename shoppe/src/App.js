@@ -8,21 +8,25 @@ import Womens from './pages/Womens'
 import Mens from './pages/Mens'
 import Login from './pages/Login';
 import UseState from './pages/UseState';
+import { useState } from 'react';
 
 function App() {
+  const [cart, setCart] = useState([])
   return (
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/womens' element={<Womens />} />
-          <Route path='/mens' element={<Mens />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/usestate' element={<UseState />} />
-        </Routes>
-        <Footer />
-      </Router>
+    <Router>
+      <Navbar size={cart.length} />
+        <>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/womens' element={<Womens />} />
+            <Route path='/mens' element={<Mens />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/usestate' element={<UseState />} />
+          </Routes>
+          <Footer />
+        </>
+    </Router>
   );
 }
 

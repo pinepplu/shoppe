@@ -24,13 +24,6 @@ a {
     text-decoration: none;
 }
 
-li:hover {
-    background-color: darkblue;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-}
-
 .search-bar {
     display: flex;
     justify-content: flex-end;
